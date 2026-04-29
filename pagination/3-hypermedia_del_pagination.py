@@ -32,7 +32,7 @@ class Server:
 
         data = []
         current_index = index
-        
+
         while len(data) < page_size and current_index < len(self.dataset()):
             item = indexed_data.get(current_index)
             if item:
