@@ -1,3 +1,5 @@
 function displayMessage(message) {
-console.log(messsage);
+  console.log(message);
 }
+
+module.exports = displayMessage;
