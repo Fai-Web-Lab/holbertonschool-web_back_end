@@ -3,7 +3,7 @@ const fs = require('fs');
 function countStudents(path) {
   try {
     const data = fs.readFileSync(path, 'utf8');
-    
+
     // Split lines and filter out empty lines or header
     const lines = data.split('\n').filter((line) => line.trim() !== '');
     if (lines.length <= 1) {
