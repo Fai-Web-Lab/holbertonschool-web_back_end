@@ -7,8 +7,7 @@ export class StudentsController {
     readDatabase(dbFile)
       .then((fields) => {
         const outputLines = ['This is the list of our students'];
-        
-        // Sort keys case-insensitively alphabetically
+
         const sortedFields = Object.keys(fields).sort((a, b) => (
           a.toLowerCase().localeCompare(b.toLowerCase())
         ));
